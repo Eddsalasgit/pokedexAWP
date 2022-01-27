@@ -1,12 +1,10 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import Popup from './components/Popup';
-import axios from 'axios';
 
 function App() {
   const [pokemon, setPokemon]=useState({});
   const [buttonPopup, setButtonPopup]= useState(false);
-  // const [tablaPokemon, setTablaPokemon] = useState([]);
   const [busqueda, setBusqueda]=useState("");
   
 
@@ -45,15 +43,6 @@ function App() {
     e.persist();
     setBusqueda(e.target.value);
   }
-
-  // const filtrar=(terminoBusqueda)=>{
-  //   var resultado=tablaPokemon.filter((elemento)=>{
-  //     if(elemento.name.toString().toLowerCase().includes(terminoBusqueda.toLowerCase())){
-  //       return elemento;
-  //     }
-  //   });
-  //   setPokemon(resultado);
-  // }
 
   useEffect(()=>{
     console.log({pokemon});
