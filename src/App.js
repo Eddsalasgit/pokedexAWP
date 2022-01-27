@@ -52,7 +52,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <a href='https://github.com/Eddsalasgit/Pokedex'>GitHub</a>
+        <a href='https://github.com/Eddsalasgit/PokedexAWP'>GitHub</a>
         <div className='flex-container'>
           <img src={pokemon?.sprites?.front_default
             ?? "https://pngimg.com/uploads/pokeball/pokeball_PNG20.png"}
